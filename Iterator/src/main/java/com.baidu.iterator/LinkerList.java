@@ -30,4 +30,9 @@ public class LinkerList implements Collection {
     public int size(){
         return size;
     }
+
+    @Override
+    public Iterator iterator() {
+        return null;
+    }
 }

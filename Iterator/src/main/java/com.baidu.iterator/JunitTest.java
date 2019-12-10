@@ -34,9 +34,33 @@ public class JunitTest {
         System.out.println(c.size());
         System.out.println("---------");
 
-        ArrayList arrayList= (ArrayList) c;
+       /* ArrayList arrayList= (ArrayList) c;
         for(int i=0;i<arrayList.size();i++){
             System.out.println(arrayList.objects[i]);
+        }*/
+       Iterator iterator=c.iterator();
+       while (iterator.hasNext()){
+           Object o=iterator.next();
+       }
+    }
+
+    @Test
+    public void f3(){
+        Collection c=new ArrayList();
+        c.add(new Cat("xiaobai"));
+        c.add(new Cat("xiaohei"));
+
+       /* 不同集合的遍历方法不一样
+       ArrayList arrayList= (ArrayList) c;
+        for(int i=0;i<arrayList.size();i++){
+            System.out.println(arrayList.objects[i]);
+        }*/
+        Iterator iterator=c.iterator();
+        while (iterator.hasNext()){
+            Object o=iterator.next();
+            Cat cat= (Cat) o;
+            System.out.println(cat);
         }
+        System.out.println(c.size());
     }
 }

@@ -9,4 +9,5 @@ package com.baidu.iterator;
 public interface Collection {
     void add(Object object);
     int size();
+    Iterator iterator();
 }
