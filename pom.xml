@@ -11,6 +11,7 @@
     <modules>
         <module>Responsibility-Chain</module>
         <module>Singleton</module>
+        <module>Iterator</module>
     </modules>
     <dependencies>
         <dependency>
