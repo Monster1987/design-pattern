@@ -12,6 +12,7 @@
         <module>Responsibility-Chain</module>
         <module>Singleton</module>
         <module>Iterator</module>
+        <module>factory</module>
     </modules>
     <dependencies>
         <dependency>
